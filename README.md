@@ -9,7 +9,8 @@ This is a time series forecasting problem. The dataset contains 30 years of egg 
 3. [Model](#model)
 4. [Results](#results)
 5. [Conclusion](#conclusion)
-6. [References](#references)
+6. [Reflection](#reflection)
+7. [References](#references)
 ---
 
 
@@ -50,6 +51,11 @@ I'm using **Seasonal AutoRegressive Integrated Moving Average (SARIMA)** which i
 ## **[Conclusion](#conclusion)**
 The model is able to predict the egg sales for 2022 with RMSE of 24.03167. The model can be improved by using other algorithms such as LSTM, Prophet, etc. I have used Dicky Fuller test to check the stationarity of the data. And used Difference method to make the data stationary. I have used different permutations of p, d, q values to find the best parameters for the model. I have used SARIMAX to train the model and forecast the sales.
 
+---
+## **[Reflection](#reflection)**
+- There are many ways that I could've used to solve this problem. I could've used Prophet, XGBoost, or any other algorithms. Who knows, it might've resulted it different results.
+- There is also another way I think that might improve the model accuracy. I could've used holidays as an additional feature. Use One-Hot encoding to encode the holidays i.e 0 for non-holiday and 1 for holiday. This might've atleast show us a correlation between holidays and sales. But I didn't do it because I couldn't figure out how to fetch the data.
+- I've tried to use several Holiday APIs such as HolidayAPI.com, AbstractAPI.com, etc but most of them were paid and other had limitations for free users. Let me know if you know any free Holiday APIs.
 ---
 ## **[References](#references)**
 These are the references I used for this notebook:
